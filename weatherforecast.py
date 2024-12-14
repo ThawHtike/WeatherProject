@@ -9,6 +9,7 @@ url = f'https://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}
 response =requests.get(url)
 
 data = response.json()
+
 print(data)
 
 print('weather is ',data['weather'][0]['description'])
